@@ -18,7 +18,7 @@ class MyDummyEnumSpec: QuickSpec {
             describe("its First") {
                 it("is easy to use") {
                     expect(MyDummyEnum.First).to(equal(MyDummyEnum.First))
-                    expect(MyDummyEnum.First).toNot(equal(MyDummyEnum.Second))
+                    expect(MyDummyEnum.First).toNot(equal(MyDummyEnum.First))
                 }
             }
         }
