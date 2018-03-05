@@ -85,6 +85,7 @@
 		6AE694112A13FCFDE707EB62 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		6AE695CF718483F89A9CDE29 /* MyDummyEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDummyEnum.swift; sourceTree = "<group>"; };
 		6AE696F71FC61382B9F29CAC /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = file.private; path = Cartfile.private; sourceTree = "<group>"; };
+		6AE6981B64B4FA17C0C53B2C /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		84456B0C204CA45900587A33 /* DesktopOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesktopOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84456B0F204CA45900587A33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84456B11204CA45900587A33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +146,7 @@
 				84456B0D204CA45900587A33 /* Products */,
 				6AE694112A13FCFDE707EB62 /* Cartfile */,
 				6AE696F71FC61382B9F29CAC /* Cartfile.private */,
+				6AE6981B64B4FA17C0C53B2C /* .swiftlint.yml */,
 			);
 			sourceTree = "<group>";
 		};
