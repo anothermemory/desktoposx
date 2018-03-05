@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AE691A7AB5786FBAA4FE2ED /* MyDummyEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE695CF718483F89A9CDE29 /* MyDummyEnum.swift */; };
+		6AE69FFDC51736E412B92C51 /* MyDummyEnumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE6935CB5CC42942571FCA1 /* MyDummyEnumTests.swift */; };
 		84456B10204CA45900587A33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84456B0F204CA45900587A33 /* AppDelegate.swift */; };
 		84456B12204CA45900587A33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84456B11204CA45900587A33 /* ViewController.swift */; };
 		84456B14204CA45900587A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84456B13204CA45900587A33 /* Assets.xcassets */; };
 		84456B17204CA45900587A33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84456B15204CA45900587A33 /* Main.storyboard */; };
 		84456B23204CA45A00587A33 /* DesktopOSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84456B22204CA45A00587A33 /* DesktopOSXTests.swift */; };
 		84456B2E204CA45A00587A33 /* DesktopOSXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84456B2D204CA45A00587A33 /* DesktopOSXUITests.swift */; };
+		84456B43204CAE3100587A33 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84456B42204CAE3100587A33 /* ReSwift.framework */; };
+		84456B44204CAE3100587A33 /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84456B42204CAE3100587A33 /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84456B45204CAE9000587A33 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84456B3F204CAE0400587A33 /* Quick.framework */; };
+		84456B46204CAE9500587A33 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84456B3F204CAE0400587A33 /* Quick.framework */; };
+		84456B47204CAEA400587A33 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84456B3B204CADD100587A33 /* Nimble.framework */; };
+		84456B48204CAEA400587A33 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84456B3B204CADD100587A33 /* Nimble.framework */; };
+		84456B4A204CB29C00587A33 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84456B3F204CAE0400587A33 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84456B4B204CB29C00587A33 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84456B3B204CADD100587A33 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84456B4D204CB2A700587A33 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84456B3F204CAE0400587A33 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84456B4E204CB2A700587A33 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84456B3B204CADD100587A33 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,8 +44,46 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		84456B3E204CADD100587A33 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84456B44204CAE3100587A33 /* ReSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84456B49204CB28A00587A33 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84456B4A204CB29C00587A33 /* Quick.framework in CopyFiles */,
+				84456B4B204CB29C00587A33 /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84456B4C204CB2A200587A33 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84456B4D204CB2A700587A33 /* Quick.framework in CopyFiles */,
+				84456B4E204CB2A700587A33 /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6AE6935CB5CC42942571FCA1 /* MyDummyEnumTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDummyEnumTests.swift; sourceTree = "<group>"; };
 		6AE694112A13FCFDE707EB62 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		6AE695CF718483F89A9CDE29 /* MyDummyEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDummyEnum.swift; sourceTree = "<group>"; };
 		6AE696F71FC61382B9F29CAC /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = file.private; path = Cartfile.private; sourceTree = "<group>"; };
 		84456B0C204CA45900587A33 /* DesktopOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesktopOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84456B0F204CA45900587A33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +98,9 @@
 		84456B29204CA45A00587A33 /* DesktopOSXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesktopOSXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84456B2D204CA45A00587A33 /* DesktopOSXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopOSXUITests.swift; sourceTree = "<group>"; };
 		84456B2F204CA45A00587A33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84456B3B204CADD100587A33 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
+		84456B3F204CAE0400587A33 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		84456B42204CAE3100587A33 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/Mac/ReSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84456B43204CAE3100587A33 /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +116,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84456B45204CAE9000587A33 /* Quick.framework in Frameworks */,
+				84456B48204CAEA400587A33 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +125,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84456B46204CAE9500587A33 /* Quick.framework in Frameworks */,
+				84456B47204CAEA400587A33 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +136,9 @@
 		84456B03204CA45900587A33 = {
 			isa = PBXGroup;
 			children = (
+				84456B42204CAE3100587A33 /* ReSwift.framework */,
+				84456B3F204CAE0400587A33 /* Quick.framework */,
+				84456B3B204CADD100587A33 /* Nimble.framework */,
 				84456B0E204CA45900587A33 /* DesktopOSX */,
 				84456B21204CA45A00587A33 /* DesktopOSXTests */,
 				84456B2C204CA45A00587A33 /* DesktopOSXUITests */,
@@ -106,6 +167,7 @@
 				84456B15204CA45900587A33 /* Main.storyboard */,
 				84456B18204CA45900587A33 /* Info.plist */,
 				84456B19204CA45900587A33 /* DesktopOSX.entitlements */,
+				6AE695CF718483F89A9CDE29 /* MyDummyEnum.swift */,
 			);
 			path = DesktopOSX;
 			sourceTree = "<group>";
@@ -115,6 +177,7 @@
 			children = (
 				84456B22204CA45A00587A33 /* DesktopOSXTests.swift */,
 				84456B24204CA45A00587A33 /* Info.plist */,
+				6AE6935CB5CC42942571FCA1 /* MyDummyEnumTests.swift */,
 			);
 			path = DesktopOSXTests;
 			sourceTree = "<group>";
@@ -138,6 +201,7 @@
 				84456B08204CA45900587A33 /* Sources */,
 				84456B09204CA45900587A33 /* Frameworks */,
 				84456B0A204CA45900587A33 /* Resources */,
+				84456B3E204CADD100587A33 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +219,7 @@
 				84456B1A204CA45A00587A33 /* Sources */,
 				84456B1B204CA45A00587A33 /* Frameworks */,
 				84456B1C204CA45A00587A33 /* Resources */,
+				84456B49204CB28A00587A33 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -173,6 +238,7 @@
 				84456B25204CA45A00587A33 /* Sources */,
 				84456B26204CA45A00587A33 /* Frameworks */,
 				84456B27204CA45A00587A33 /* Resources */,
+				84456B4C204CB2A200587A33 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -263,6 +329,7 @@
 			files = (
 				84456B12204CA45900587A33 /* ViewController.swift in Sources */,
 				84456B10204CA45900587A33 /* AppDelegate.swift in Sources */,
+				6AE691A7AB5786FBAA4FE2ED /* MyDummyEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84456B23204CA45A00587A33 /* DesktopOSXTests.swift in Sources */,
+				6AE69FFDC51736E412B92C51 /* MyDummyEnumTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +490,11 @@
 				CODE_SIGN_ENTITLEMENTS = DesktopOSX/DesktopOSX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = DesktopOSX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anothermemory.DesktopOSX;
@@ -437,6 +510,11 @@
 				CODE_SIGN_ENTITLEMENTS = DesktopOSX/DesktopOSX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = DesktopOSX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anothermemory.DesktopOSX;
@@ -452,6 +530,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = DesktopOSXTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anothermemory.DesktopOSXTests;
@@ -468,6 +550,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = DesktopOSXTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anothermemory.DesktopOSXTests;
@@ -483,6 +569,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = DesktopOSXUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anothermemory.DesktopOSXUITests;
@@ -498,6 +588,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = DesktopOSXUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anothermemory.DesktopOSXUITests;
