@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import ReSwift
 
 class ViewController: NSViewController {
 
@@ -18,8 +19,40 @@ class ViewController: NSViewController {
 
     override var representedObject: Any? {
         didSet {
-        // Update the view, if already loaded.
+            // Update the view, if already loaded.
         }
     }
 
+    override func viewWillAppear() {
+        super.viewWillAppear()
+//
+//        appStore.subscribe(self) { (subscription: Subscription<AppState>) -> Subscription<MemoriesState> in
+//            subscription.select { (state: AppState) -> MemoriesState in
+//                state.memoriesState
+//            }
+//        }
+
+        appStore.subscribe(self) { subscription in
+            subscription.select { (state: AppState) in
+                state.memoriesState
+            }
+        }
+    }
+
+    override func viewWillDisappear() {
+        super.viewWillDisappear()
+    }
+}
+
+extension ViewController: StoreSubscriber {
+    func newState(state: MemoriesState) {
+        let alert: NSAlert = NSAlert()
+        alert.messageText = "New memories"
+        alert.informativeText = state.memories.reduce("", {result, memory in
+           result + "," + memory.name
+        })
+        alert.alertStyle = .informational
+        alert.addButton(withTitle: "OK")
+        alert.runModal()
+    }
 }
