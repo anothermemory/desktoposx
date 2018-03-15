@@ -46,13 +46,13 @@ class ViewController: NSViewController {
 
 extension ViewController: StoreSubscriber {
     func newState(state: MemoriesState) {
-        let alert: NSAlert = NSAlert()
-        alert.messageText = "New memories"
-        alert.informativeText = state.memories.reduce("", {result, memory in
-           result + "," + memory.name
-        })
-        alert.alertStyle = .informational
-        alert.addButton(withTitle: "OK")
-        alert.runModal()
+//        let alert: NSAlert = NSAlert()
+//        alert.messageText = "New memories"
+//        alert.informativeText = state.memories.reduce("", {result, memory in
+//           result + "," + memory.name
+//        })
+//        alert.alertStyle = .informational
+//        alert.addButton(withTitle: "OK")
+//        alert.runModal()
     }
 }
