@@ -9,22 +9,20 @@ import ReSwift
 
 class MemoriesDataSource: NSObject, NSOutlineViewDataSource, NSOutlineViewDelegate, StoreSubscriber {
     var memoriesView: NSOutlineView!
-    var memories: [AMMemory] = []
 
     init(memoriesView: NSOutlineView) {
         self.memoriesView = memoriesView
     }
     func newState(state: MemoriesState) {
-        self.memories = state.memories
         self.memoriesView.reloadData()
     }
 
     func outlineView(_ outlineView: NSOutlineView, numberOfChildrenOfItem item: Any?) -> Int {
-        return memories.count
+        return appStore.state.memoriesState.memories.count
     }
 
     func outlineView(_ outlineView: NSOutlineView, child index: Int, ofItem item: Any?) -> Any {
-        return memories[index]
+        return appStore.state.memoriesState.memories[index]
     }
 
     func outlineView(_ outlineView: NSOutlineView, isItemExpandable item: Any) -> Bool {
