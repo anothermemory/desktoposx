@@ -16,6 +16,7 @@
 		6AE696F2FDA62CA151164E8E /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE697A5FDE58E07308771D3 /* Memory.swift */; };
 		6AE69A7D787C1908D6C73FCA /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69845A81A886046FD87A5 /* AppReducer.swift */; };
 		6AE69AF39B93F702B3E19A28 /* Memories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69BA08EC69916CA969861 /* Memories.swift */; };
+		6AE69BE677D1DF78F856F40D /* MemoriesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE6968E295D0CBDEF0870CB /* MemoriesDataSource.swift */; };
 		84456B10204CA45900587A33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84456B0F204CA45900587A33 /* AppDelegate.swift */; };
 		84456B12204CA45900587A33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84456B11204CA45900587A33 /* ViewController.swift */; };
 		84456B14204CA45900587A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84456B13204CA45900587A33 /* Assets.xcassets */; };
@@ -89,6 +90,7 @@
 
 /* Begin PBXFileReference section */
 		6AE694112A13FCFDE707EB62 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		6AE6968E295D0CBDEF0870CB /* MemoriesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoriesDataSource.swift; sourceTree = "<group>"; };
 		6AE696F71FC61382B9F29CAC /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = file.private; path = Cartfile.private; sourceTree = "<group>"; };
 		6AE697A5FDE58E07308771D3 /* Memory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
 		6AE6981B64B4FA17C0C53B2C /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .swiftlint.yml; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				6AE6913D48A3EDE39482FF01 /* Reducers */,
 				6AE699057FC66B3CFBDBA0D6 /* State */,
 				6AE69864BF3D2B1B10546A1D /* Model */,
+				6AE6968E295D0CBDEF0870CB /* MemoriesDataSource.swift */,
 			);
 			path = DesktopOSX;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				6AE692DF5A87A3239B557658 /* MemoriesReducer.swift in Sources */,
 				6AE692340DE2A7076047E21D /* Unit.swift in Sources */,
 				6AE6969CDE5EB5F30D7FE75B /* Storage.swift in Sources */,
+				6AE69BE677D1DF78F856F40D /* MemoriesDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

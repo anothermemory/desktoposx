@@ -5,7 +5,7 @@
 
 import Foundation
 
-class AMMemory {
+class AMMemory: NSObject {
     var name: String
     var root: AMUnit?
     var storage: AMStorage?

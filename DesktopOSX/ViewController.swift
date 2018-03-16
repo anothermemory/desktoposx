@@ -11,6 +11,9 @@ import ReSwift
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var memoriesView: NSOutlineView!
+    var memoriesDataSource: MemoriesDataSource!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +28,10 @@ class ViewController: NSViewController {
 
     override func viewWillAppear() {
         super.viewWillAppear()
+
+        self.memoriesDataSource = MemoriesDataSource(memoriesView: self.memoriesView)
+        self.memoriesView.dataSource = self.memoriesDataSource
+        self.memoriesView.delegate = self.memoriesDataSource
 //
 //        appStore.subscribe(self) { (subscription: Subscription<AppState>) -> Subscription<MemoriesState> in
 //            subscription.select { (state: AppState) -> MemoriesState in
@@ -37,6 +44,14 @@ class ViewController: NSViewController {
                 state.memoriesState
             }
         }
+
+        appStore.subscribe(memoriesDataSource) { subscription in
+            subscription.select { (state: AppState) in
+                state.memoriesState
+            }
+        }
+
+//        self.memoriesView.reloadData()
     }
 
     override func viewWillDisappear() {

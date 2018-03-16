@@ -14,7 +14,7 @@ enum AMUnitType {
     case textCode
 }
 
-class AMUnit {
+class AMUnit: NSObject {
     var type: AMUnitType {
         return .unit
     }

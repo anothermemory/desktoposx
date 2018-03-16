@@ -11,7 +11,7 @@ enum AMStorageType {
     case directoryInMemory
 }
 
-class AMStorage {
+class AMStorage: NSObject {
     var type: AMStorageType {
         return .unsupported
     }

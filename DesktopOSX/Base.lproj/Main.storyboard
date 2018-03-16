@@ -717,13 +717,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="241" height="270"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
-                                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="26" horizontalPageScroll="10" verticalLineScroll="26" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WwA-zZ-68A">
+                                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WwA-zZ-68A">
                                                 <rect key="frame" x="0.0" y="0.0" width="241" height="270"/>
                                                 <clipView key="contentView" drawsBackground="NO" id="B2f-9q-hOs">
                                                     <rect key="frame" x="0.0" y="0.0" width="241" height="270"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowHeight="24" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="16" outlineTableColumn="MOX-bK-8tl" id="T27-Hs-Khg">
+                                                        <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="16" outlineTableColumn="MOX-bK-8tl" id="T27-Hs-Khg">
                                                             <rect key="frame" x="0.0" y="0.0" width="241" height="270"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <size key="intercellSpacing" width="3" height="2"/>
@@ -827,8 +827,12 @@
                             <constraint firstAttribute="trailing" secondItem="bkx-DW-rag" secondAttribute="trailing" id="pU8-VY-nrz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="memoriesView" destination="T27-Hs-Khg" id="h80-CX-dbr"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="vKO-g9-tcl" userLabel="MemoriesDataSource"/>
             </objects>
             <point key="canvasLocation" x="75" y="655"/>
         </scene>
