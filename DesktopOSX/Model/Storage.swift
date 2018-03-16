@@ -17,10 +17,10 @@ class AMStorage {
     }
 }
 
-class AMStorageDirectory {
+class AMStorageDirectory: AMStorage {
     var rootDir: String
 
-    var type: AMStorageType {
+    override var type: AMStorageType {
         return .directory
     }
 
@@ -29,8 +29,8 @@ class AMStorageDirectory {
     }
 }
 
-class AMStorageDirectoryInMemory {
-    var type: AMStorageType {
+class AMStorageDirectoryInMemory: AMStorage {
+    override var type: AMStorageType {
         return .directoryInMemory
     }
 }
