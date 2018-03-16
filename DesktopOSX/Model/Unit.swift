@@ -77,3 +77,16 @@ class AMUnitTodo: AMUnit {
         super.init(uid: uid, title: title, created: created, updated: updated)
     }
 }
+
+class AMUnitList: AMUnit {
+    override var type: AMUnitType {
+        return .list
+    }
+
+    var items: [AMUnit] = []
+
+    init(uid: String, title: String, created: Date, updated: Date, items: [AMUnit]) {
+        self.items = items
+        super.init(uid: uid, title: title, created: created, updated: updated)
+    }
+}
