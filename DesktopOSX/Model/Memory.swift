@@ -5,6 +5,12 @@
 
 import Foundation
 
-struct Memory {
-    public var name: String
+class AMMemory {
+    var name: String
+    var root: AMUnit?
+    var storage: AMStorage?
+
+    init(name: String) {
+        self.name = name
+    }
 }

@@ -13,6 +13,7 @@
 		6AE6932AA2999D6E6DC4ECED /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69CCC60E8A5BFFC46D147 /* AppState.swift */; };
 		6AE695314A2794BF925EA6BE /* MemoriesState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69ACA3703150D9AA680D1 /* MemoriesState.swift */; };
 		6AE6969C56FC1AE72963F318 /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69BCDB50AB0799C6B3A34 /* UnitTests.swift */; };
+		6AE6969CDE5EB5F30D7FE75B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE698C0EB89A0C472777501 /* Storage.swift */; };
 		6AE696F2FDA62CA151164E8E /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE697A5FDE58E07308771D3 /* Memory.swift */; };
 		6AE69A7D787C1908D6C73FCA /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69845A81A886046FD87A5 /* AppReducer.swift */; };
 		6AE69AF39B93F702B3E19A28 /* Memories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69BA08EC69916CA969861 /* Memories.swift */; };
@@ -97,6 +98,7 @@
 		6AE6981B64B4FA17C0C53B2C /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		6AE69845A81A886046FD87A5 /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		6AE698762A7B3B60490F2AD3 /* MemoriesReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoriesReducer.swift; sourceTree = "<group>"; };
+		6AE698C0EB89A0C472777501 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		6AE69A7C49826D5E48A85E29 /* Unit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
 		6AE69ACA3703150D9AA680D1 /* MemoriesState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoriesState.swift; sourceTree = "<group>"; };
 		6AE69BA08EC69916CA969861 /* Memories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memories.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			children = (
 				6AE697A5FDE58E07308771D3 /* Memory.swift */,
 				6AE69A7C49826D5E48A85E29 /* Unit.swift */,
+				6AE698C0EB89A0C472777501 /* Storage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				6AE696F2FDA62CA151164E8E /* Memory.swift in Sources */,
 				6AE692DF5A87A3239B557658 /* MemoriesReducer.swift in Sources */,
 				6AE692340DE2A7076047E21D /* Unit.swift in Sources */,
+				6AE6969CDE5EB5F30D7FE75B /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
