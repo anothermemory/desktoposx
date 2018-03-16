@@ -6,5 +6,5 @@
 import ReSwift
 
 struct SetMemoriesAction: Action {
-    var memories: [Memory] = []
+    var memories: [AMMemory] = []
 }
