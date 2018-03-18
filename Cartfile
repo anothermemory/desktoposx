@@ -1,1 +1,2 @@
 github "ReSwift/ReSwift" ~> 4.0.1
+github "ReactorKit/ReactorKit" ~> 1.1.0
