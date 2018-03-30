@@ -14,6 +14,7 @@
 		6AE6969C56FC1AE72963F318 /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69BCDB50AB0799C6B3A34 /* UnitTests.swift */; };
 		6AE6969CDE5EB5F30D7FE75B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE698C0EB89A0C472777501 /* Storage.swift */; };
 		6AE696F2FDA62CA151164E8E /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE697A5FDE58E07308771D3 /* Memory.swift */; };
+		6AE699B062953E74B6FC4B43 /* AppReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69CEC3303A1C534396B37 /* AppReactor.swift */; };
 		6AE69A7D787C1908D6C73FCA /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69845A81A886046FD87A5 /* AppReducer.swift */; };
 		6AE69AF39B93F702B3E19A28 /* Memories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69BA08EC69916CA969861 /* Memories.swift */; };
 		6AE69BE677D1DF78F856F40D /* MemoriesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE6968E295D0CBDEF0870CB /* MemoriesDataSource.swift */; };
@@ -119,6 +120,7 @@
 		6AE69BA08EC69916CA969861 /* Memories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memories.swift; sourceTree = "<group>"; };
 		6AE69BCDB50AB0799C6B3A34 /* UnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
 		6AE69CCC60E8A5BFFC46D147 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		6AE69CEC3303A1C534396B37 /* AppReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReactor.swift; sourceTree = "<group>"; };
 		84456B0C204CA45900587A33 /* DesktopOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesktopOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84456B0F204CA45900587A33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84456B11204CA45900587A33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 				6AE69864BF3D2B1B10546A1D /* Model */,
 				6AE6968E295D0CBDEF0870CB /* MemoriesDataSource.swift */,
 				6AE696BBF5C54303A2D2F7C4 /* MemoriesReactor.swift */,
+				6AE69CEC3303A1C534396B37 /* AppReactor.swift */,
 			);
 			path = DesktopOSX;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				6AE6969CDE5EB5F30D7FE75B /* Storage.swift in Sources */,
 				6AE69BE677D1DF78F856F40D /* MemoriesDataSource.swift in Sources */,
 				6AE69DBD1A89A95920F54BE8 /* MemoriesReactor.swift in Sources */,
+				6AE699B062953E74B6FC4B43 /* AppReactor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

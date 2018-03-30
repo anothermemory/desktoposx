@@ -11,6 +11,8 @@ import ReSwift
 
 //let appStore = Store<AppState>(reducer: appReducer, state: AppState(), middleware: [])
 
+let appReactor = AppReactor()
+
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
