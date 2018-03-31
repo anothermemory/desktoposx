@@ -20,6 +20,66 @@
 		84456B17204CA45900587A33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84456B15204CA45900587A33 /* Main.storyboard */; };
 		84456B23204CA45A00587A33 /* DesktopOSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84456B22204CA45A00587A33 /* DesktopOSXTests.swift */; };
 		84456B2E204CA45A00587A33 /* DesktopOSXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84456B2D204CA45A00587A33 /* DesktopOSXUITests.swift */; };
+		84E124B120704F9700E66799 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124A620704F9700E66799 /* RxSwift.framework */; };
+		84E124BB20704FB500E66799 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AB20704F9700E66799 /* Nimble.framework */; };
+		84E124BC20704FB600E66799 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AB20704F9700E66799 /* Nimble.framework */; };
+		84E124BD20704FBE00E66799 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AC20704F9700E66799 /* Quick.framework */; };
+		84E124BE20704FBE00E66799 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AC20704F9700E66799 /* Quick.framework */; };
+		84E124BF20704FC800E66799 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AD20704F9700E66799 /* RxTest.framework */; };
+		84E124C020704FC800E66799 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AD20704F9700E66799 /* RxTest.framework */; };
+		84E124C12070514E00E66799 /* ReactorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124A720704F9700E66799 /* ReactorKit.framework */; };
+		84E124C22070514E00E66799 /* ReactorKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124A720704F9700E66799 /* ReactorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124C32070514E00E66799 /* ReactorKitRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124A520704F9700E66799 /* ReactorKitRuntime.framework */; };
+		84E124C42070514E00E66799 /* ReactorKitRuntime.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124A520704F9700E66799 /* ReactorKitRuntime.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124C52070514E00E66799 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AF20704F9700E66799 /* RxBlocking.framework */; };
+		84E124C62070514E00E66799 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AF20704F9700E66799 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124C72070514E00E66799 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124A820704F9700E66799 /* RxCocoa.framework */; };
+		84E124C82070514E00E66799 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124A820704F9700E66799 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124CA2070514E00E66799 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124A620704F9700E66799 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124CD2070514E00E66799 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AA20704F9700E66799 /* Swinject.framework */; };
+		84E124CE2070514E00E66799 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AA20704F9700E66799 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124CF2070514E00E66799 /* SwinjectAutoregistration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124A920704F9700E66799 /* SwinjectAutoregistration.framework */; };
+		84E124D02070514E00E66799 /* SwinjectAutoregistration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124A920704F9700E66799 /* SwinjectAutoregistration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124D12070514E00E66799 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AE20704F9700E66799 /* SwinjectStoryboard.framework */; };
+		84E124D22070514E00E66799 /* SwinjectStoryboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AE20704F9700E66799 /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124D4207052D400E66799 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124AB20704F9700E66799 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124D5207052D400E66799 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124AC20704F9700E66799 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124D6207052D400E66799 /* RxTest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124AD20704F9700E66799 /* RxTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124D7207053BE00E66799 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124AB20704F9700E66799 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124D8207053BE00E66799 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124AC20704F9700E66799 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124D9207053BE00E66799 /* RxTest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124AD20704F9700E66799 /* RxTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124DA2070542A00E66799 /* ReactorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124A720704F9700E66799 /* ReactorKit.framework */; };
+		84E124DB2070542A00E66799 /* ReactorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124A720704F9700E66799 /* ReactorKit.framework */; };
+		84E124DC2070542D00E66799 /* ReactorKitRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124A520704F9700E66799 /* ReactorKitRuntime.framework */; };
+		84E124DD2070542D00E66799 /* ReactorKitRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124A520704F9700E66799 /* ReactorKitRuntime.framework */; };
+		84E124DE2070542F00E66799 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AF20704F9700E66799 /* RxBlocking.framework */; };
+		84E124DF2070542F00E66799 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AF20704F9700E66799 /* RxBlocking.framework */; };
+		84E124E02070543100E66799 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124A820704F9700E66799 /* RxCocoa.framework */; };
+		84E124E12070543100E66799 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124A820704F9700E66799 /* RxCocoa.framework */; };
+		84E124E22070543300E66799 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124A620704F9700E66799 /* RxSwift.framework */; };
+		84E124E32070543300E66799 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124A620704F9700E66799 /* RxSwift.framework */; };
+		84E124E42070543800E66799 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AA20704F9700E66799 /* Swinject.framework */; };
+		84E124E52070543800E66799 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AA20704F9700E66799 /* Swinject.framework */; };
+		84E124E62070543A00E66799 /* SwinjectAutoregistration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124A920704F9700E66799 /* SwinjectAutoregistration.framework */; };
+		84E124E72070543A00E66799 /* SwinjectAutoregistration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124A920704F9700E66799 /* SwinjectAutoregistration.framework */; };
+		84E124E82070543C00E66799 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AE20704F9700E66799 /* SwinjectStoryboard.framework */; };
+		84E124E92070543C00E66799 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AE20704F9700E66799 /* SwinjectStoryboard.framework */; };
+		84E124EA2070545200E66799 /* ReactorKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124A720704F9700E66799 /* ReactorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124EB2070545200E66799 /* ReactorKitRuntime.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124A520704F9700E66799 /* ReactorKitRuntime.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124EC2070545200E66799 /* RxBlocking.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124AF20704F9700E66799 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124ED2070545200E66799 /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124A820704F9700E66799 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124EE2070545200E66799 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124A620704F9700E66799 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124EF2070545200E66799 /* Swinject.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124AA20704F9700E66799 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124F02070545200E66799 /* SwinjectAutoregistration.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124A920704F9700E66799 /* SwinjectAutoregistration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124F12070545200E66799 /* SwinjectStoryboard.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124AE20704F9700E66799 /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124F22070547200E66799 /* ReactorKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124A720704F9700E66799 /* ReactorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124F32070547200E66799 /* ReactorKitRuntime.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124A520704F9700E66799 /* ReactorKitRuntime.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124F42070547200E66799 /* RxBlocking.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124AF20704F9700E66799 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124F52070547200E66799 /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124A820704F9700E66799 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124F62070547200E66799 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124A620704F9700E66799 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124F72070547200E66799 /* Swinject.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124AA20704F9700E66799 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124F82070547200E66799 /* SwinjectAutoregistration.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124A920704F9700E66799 /* SwinjectAutoregistration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E124F92070547200E66799 /* SwinjectStoryboard.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E124AE20704F9700E66799 /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +106,17 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				84E124F22070547200E66799 /* ReactorKit.framework in CopyFiles */,
+				84E124F32070547200E66799 /* ReactorKitRuntime.framework in CopyFiles */,
+				84E124F42070547200E66799 /* RxBlocking.framework in CopyFiles */,
+				84E124F52070547200E66799 /* RxCocoa.framework in CopyFiles */,
+				84E124F62070547200E66799 /* RxSwift.framework in CopyFiles */,
+				84E124F72070547200E66799 /* Swinject.framework in CopyFiles */,
+				84E124F82070547200E66799 /* SwinjectAutoregistration.framework in CopyFiles */,
+				84E124F92070547200E66799 /* SwinjectStoryboard.framework in CopyFiles */,
+				84E124D4207052D400E66799 /* Nimble.framework in CopyFiles */,
+				84E124D5207052D400E66799 /* Quick.framework in CopyFiles */,
+				84E124D6207052D400E66799 /* RxTest.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +126,17 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				84E124EA2070545200E66799 /* ReactorKit.framework in CopyFiles */,
+				84E124EB2070545200E66799 /* ReactorKitRuntime.framework in CopyFiles */,
+				84E124EC2070545200E66799 /* RxBlocking.framework in CopyFiles */,
+				84E124ED2070545200E66799 /* RxCocoa.framework in CopyFiles */,
+				84E124EE2070545200E66799 /* RxSwift.framework in CopyFiles */,
+				84E124EF2070545200E66799 /* Swinject.framework in CopyFiles */,
+				84E124F02070545200E66799 /* SwinjectAutoregistration.framework in CopyFiles */,
+				84E124F12070545200E66799 /* SwinjectStoryboard.framework in CopyFiles */,
+				84E124D7207053BE00E66799 /* Nimble.framework in CopyFiles */,
+				84E124D8207053BE00E66799 /* Quick.framework in CopyFiles */,
+				84E124D9207053BE00E66799 /* RxTest.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +147,24 @@
 			dstSubfolderSpec = 16;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E124D32070514E00E66799 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84E124CA2070514E00E66799 /* RxSwift.framework in Embed Frameworks */,
+				84E124CE2070514E00E66799 /* Swinject.framework in Embed Frameworks */,
+				84E124C82070514E00E66799 /* RxCocoa.framework in Embed Frameworks */,
+				84E124C22070514E00E66799 /* ReactorKit.framework in Embed Frameworks */,
+				84E124D22070514E00E66799 /* SwinjectStoryboard.framework in Embed Frameworks */,
+				84E124D02070514E00E66799 /* SwinjectAutoregistration.framework in Embed Frameworks */,
+				84E124C42070514E00E66799 /* ReactorKitRuntime.framework in Embed Frameworks */,
+				84E124C62070514E00E66799 /* RxBlocking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -93,6 +193,17 @@
 		84456B29204CA45A00587A33 /* DesktopOSXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesktopOSXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84456B2D204CA45A00587A33 /* DesktopOSXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopOSXUITests.swift; sourceTree = "<group>"; };
 		84456B2F204CA45A00587A33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E124A520704F9700E66799 /* ReactorKitRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactorKitRuntime.framework; path = Carthage/Build/Mac/ReactorKitRuntime.framework; sourceTree = "<group>"; };
+		84E124A620704F9700E66799 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
+		84E124A720704F9700E66799 /* ReactorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactorKit.framework; path = Carthage/Build/Mac/ReactorKit.framework; sourceTree = "<group>"; };
+		84E124A820704F9700E66799 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
+		84E124A920704F9700E66799 /* SwinjectAutoregistration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectAutoregistration.framework; path = Carthage/Build/Mac/SwinjectAutoregistration.framework; sourceTree = "<group>"; };
+		84E124AA20704F9700E66799 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/Mac/Swinject.framework; sourceTree = "<group>"; };
+		84E124AB20704F9700E66799 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
+		84E124AC20704F9700E66799 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		84E124AD20704F9700E66799 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/Mac/RxTest.framework; sourceTree = "<group>"; };
+		84E124AE20704F9700E66799 /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectStoryboard.framework; path = Carthage/Build/Mac/SwinjectStoryboard.framework; sourceTree = "<group>"; };
+		84E124AF20704F9700E66799 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/Mac/RxBlocking.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +211,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E124C72070514E00E66799 /* RxCocoa.framework in Frameworks */,
+				84E124CD2070514E00E66799 /* Swinject.framework in Frameworks */,
+				84E124D12070514E00E66799 /* SwinjectStoryboard.framework in Frameworks */,
+				84E124C12070514E00E66799 /* ReactorKit.framework in Frameworks */,
+				84E124C52070514E00E66799 /* RxBlocking.framework in Frameworks */,
+				84E124B120704F9700E66799 /* RxSwift.framework in Frameworks */,
+				84E124CF2070514E00E66799 /* SwinjectAutoregistration.framework in Frameworks */,
+				84E124C32070514E00E66799 /* ReactorKitRuntime.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +226,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E124DA2070542A00E66799 /* ReactorKit.framework in Frameworks */,
+				84E124BD20704FBE00E66799 /* Quick.framework in Frameworks */,
+				84E124E02070543100E66799 /* RxCocoa.framework in Frameworks */,
+				84E124BB20704FB500E66799 /* Nimble.framework in Frameworks */,
+				84E124E22070543300E66799 /* RxSwift.framework in Frameworks */,
+				84E124E62070543A00E66799 /* SwinjectAutoregistration.framework in Frameworks */,
+				84E124BF20704FC800E66799 /* RxTest.framework in Frameworks */,
+				84E124E42070543800E66799 /* Swinject.framework in Frameworks */,
+				84E124E82070543C00E66799 /* SwinjectStoryboard.framework in Frameworks */,
+				84E124DC2070542D00E66799 /* ReactorKitRuntime.framework in Frameworks */,
+				84E124DE2070542F00E66799 /* RxBlocking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +244,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E124DB2070542A00E66799 /* ReactorKit.framework in Frameworks */,
+				84E124BE20704FBE00E66799 /* Quick.framework in Frameworks */,
+				84E124E12070543100E66799 /* RxCocoa.framework in Frameworks */,
+				84E124BC20704FB600E66799 /* Nimble.framework in Frameworks */,
+				84E124E32070543300E66799 /* RxSwift.framework in Frameworks */,
+				84E124E72070543A00E66799 /* SwinjectAutoregistration.framework in Frameworks */,
+				84E124C020704FC800E66799 /* RxTest.framework in Frameworks */,
+				84E124E52070543800E66799 /* Swinject.framework in Frameworks */,
+				84E124E92070543C00E66799 /* SwinjectStoryboard.framework in Frameworks */,
+				84E124DD2070542D00E66799 /* ReactorKitRuntime.framework in Frameworks */,
+				84E124DF2070542F00E66799 /* RxBlocking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +366,17 @@
 		84AE5EC8205E90F4008BFC73 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84E124AB20704F9700E66799 /* Nimble.framework */,
+				84E124AC20704F9700E66799 /* Quick.framework */,
+				84E124A720704F9700E66799 /* ReactorKit.framework */,
+				84E124A520704F9700E66799 /* ReactorKitRuntime.framework */,
+				84E124AF20704F9700E66799 /* RxBlocking.framework */,
+				84E124A820704F9700E66799 /* RxCocoa.framework */,
+				84E124A620704F9700E66799 /* RxSwift.framework */,
+				84E124AD20704F9700E66799 /* RxTest.framework */,
+				84E124AA20704F9700E66799 /* Swinject.framework */,
+				84E124A920704F9700E66799 /* SwinjectAutoregistration.framework */,
+				84E124AE20704F9700E66799 /* SwinjectStoryboard.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -240,6 +392,7 @@
 				84456B09204CA45900587A33 /* Frameworks */,
 				84456B0A204CA45900587A33 /* Resources */,
 				84A244B2207048DD008CB0A7 /* CopyFiles */,
+				84E124D32070514E00E66799 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
