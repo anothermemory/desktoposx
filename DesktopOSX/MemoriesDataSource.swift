@@ -5,7 +5,6 @@
 
 import Foundation
 import AppKit
-import ReSwift
 
 //class MemoriesDataSource: NSObject, NSOutlineViewDataSource, NSOutlineViewDelegate, StoreSubscriber {
 //    var memoriesView: NSOutlineView!

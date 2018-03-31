@@ -1,2 +1,6 @@
-github "ReSwift/ReSwift" ~> 4.0.1
 github "ReactorKit/ReactorKit" ~> 1.1.0
+github "Swinject/Swinject" ~> 2.0.0
+# github "Swinject/SwinjectPropertyLoader" ~> 1.0.0
+github "Swinject/SwinjectStoryboard" ~> 1.0.0
+github "Swinject/Swinject-CodeGeneration"
+github "Swinject/SwinjectAutoregistration" ~> 2.0.0
