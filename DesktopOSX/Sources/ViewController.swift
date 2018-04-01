@@ -7,24 +7,20 @@
 //
 
 import Cocoa
-import ReactorKit
-import RxSwift
-import AppKit
-import RxCocoa
 
-class ViewController: NSViewController, NSOutlineViewDataSource, NSOutlineViewDelegate, View {
+import AppKit
+
+
+class ViewController: NSViewController, NSOutlineViewDataSource, NSOutlineViewDelegate {
 
     @IBOutlet weak var memoriesView: NSOutlineView!
 //    var memoriesDataSource: MemoriesDataSource!
 
-    var disposeBag = DisposeBag()
+//    var disposeBag = DisposeBag()
     var memories: [AMMemory] = []
-    var mems = Variable([AMMemory]())
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        reactor = MemoriesReactor()
-        reactor?.action.onNext(MemoriesReactor.Action.startup)
         // Do any additional setup after loading the view.
 
     }
@@ -69,35 +65,20 @@ class ViewController: NSViewController, NSOutlineViewDataSource, NSOutlineViewDe
         super.viewWillDisappear()
     }
 
-    func bind(reactor: MemoriesReactor) {
-        reactor.state.debug("mems").map {
-            $0.memories
-        }.bind(to: self.mems).disposed(by: disposeBag)
-//
-//        reactor.state.debug("memories").map {
-//            $0.memories
-//        }.do(onNext: { (memories: [AMMemory]) in
-//            self.memories = memories
-//            self.memoriesView.reloadData()
-//        })
-
-    }
-
-
     func outlineView(_ outlineView: NSOutlineView, numberOfChildrenOfItem item: Any?) -> Int {
         if item == nil {
             return 1
         }
-//        return memories.count
-        return mems.value.count
+        return memories.count
+        
     }
 
     func outlineView(_ outlineView: NSOutlineView, child index: Int, ofItem item: Any?) -> Any {
         if item == nil {
             return 1
         }
-//        return memories[index]
-        return mems.value[index]
+        return memories[index]
+    
     }
 
     func outlineView(_ outlineView: NSOutlineView, isItemExpandable item: Any) -> Bool {
