@@ -695,25 +695,63 @@
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                        <segue destination="4H9-J0-X6c" kind="relationship" relationship="window.shadowedContentViewController" id="FGr-yH-gpP"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="hIz-AP-VOD">
+        <!--Split View Controller-->
+        <scene sceneID="N2E-ze-DZN">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="DesktopOSX" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <splitViewController id="4H9-J0-X6c" sceneMemberID="viewController">
+                    <splitViewItems>
+                        <splitViewItem id="f5H-SJ-Idq"/>
+                        <splitViewItem id="HGV-u5-TlB"/>
+                    </splitViewItems>
+                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="u1S-6u-UEt">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <outlet property="delegate" destination="4H9-J0-X6c" id="eiT-xI-K7G"/>
+                        </connections>
+                    </splitView>
+                    <connections>
+                        <outlet property="splitView" destination="u1S-6u-UEt" id="i4a-Ra-jbs"/>
+                        <segue destination="mpn-Z2-YGK" kind="relationship" relationship="splitItems" id="XRQ-Nd-kDG"/>
+                        <segue destination="L8I-8y-Y3e" kind="relationship" relationship="splitItems" id="Vov-pe-yzK"/>
+                    </connections>
+                </splitViewController>
+                <customObject id="JMJ-W6-hbh" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78" y="757"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kaB-0g-cB5">
+            <objects>
+                <viewController id="mpn-Z2-YGK" sceneMemberID="viewController">
+                    <view key="view" id="8lx-ot-bK4">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </view>
                 </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="L6F-V4-gMm" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="670" y="449"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="F4c-wi-xYn">
+            <objects>
+                <viewController id="L8I-8y-Y3e" sceneMemberID="viewController">
+                    <view key="view" id="Leb-Ob-wFO">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="seI-0I-TTF" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="848"/>
         </scene>
     </scenes>
 </document>
