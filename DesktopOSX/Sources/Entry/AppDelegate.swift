@@ -7,8 +7,9 @@
 //
 
 import Cocoa
+import ReSwift
 
-//let appStore = Store<AppState>(reducer: appReducer, state: AppState(), middleware: [])
+let appStore = Store<AppState>(reducer: appReducer, state: AppState(), middleware: [loggingMiddleware])
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {

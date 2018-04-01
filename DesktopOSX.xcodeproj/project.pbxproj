@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AE6906EAC17AE8C6B04FF4A /* MemoriesReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69227066E56A852A3497F /* MemoriesReducer.swift */; };
 		6AE69366FDD10D7CA0A5BB3A /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69C863BF6A73C000ECD01 /* Storage.swift */; };
 		6AE6969C56FC1AE72963F318 /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69BCDB50AB0799C6B3A34 /* UnitTests.swift */; };
-		6AE699B062953E74B6FC4B43 /* AppReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69CEC3303A1C534396B37 /* AppReactor.swift */; };
+		6AE6988D16F871BE0699AC42 /* AppActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE699757518A0286A64FFC9 /* AppActions.swift */; };
+		6AE699A37A3093EC7CCCA33B /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE698E78A7B0ADD0B6539D4 /* AppReducer.swift */; };
 		6AE699E8E0590B3115B80B39 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE697305DDC495C71D5D247 /* Unit.swift */; };
+		6AE69BD304A16BF1B37C3D80 /* LoggingMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE692E267071F5E5CC68B01 /* LoggingMiddleware.swift */; };
 		6AE69CCD44A13F4399B272A5 /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE690D4D663065D1198BA7E /* Memory.swift */; };
-		6AE69FD7E4E54CE5481E732C /* MemoriesReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69AB856D283BB3C193FDB /* MemoriesReactor.swift */; };
+		6AE69E96887503767F89FC13 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE69B56243002DF4AD63CEA /* AppState.swift */; };
+		6AE69FE6D6101FC01FC24E5A /* MemoriesState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE690324C64234A835BB893 /* MemoriesState.swift */; };
 		84456B10204CA45900587A33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84456B0F204CA45900587A33 /* AppDelegate.swift */; };
 		84456B12204CA45900587A33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84456B11204CA45900587A33 /* ViewController.swift */; };
 		84456B14204CA45900587A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84456B13204CA45900587A33 /* Assets.xcassets */; };
@@ -100,15 +104,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6AE690324C64234A835BB893 /* MemoriesState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoriesState.swift; sourceTree = "<group>"; };
 		6AE690D4D663065D1198BA7E /* Memory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
+		6AE69227066E56A852A3497F /* MemoriesReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoriesReducer.swift; sourceTree = "<group>"; };
+		6AE692E267071F5E5CC68B01 /* LoggingMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingMiddleware.swift; sourceTree = "<group>"; };
 		6AE694112A13FCFDE707EB62 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		6AE696F71FC61382B9F29CAC /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = file.private; path = Cartfile.private; sourceTree = "<group>"; };
 		6AE697305DDC495C71D5D247 /* Unit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
 		6AE6981B64B4FA17C0C53B2C /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .swiftlint.yml; sourceTree = "<group>"; };
-		6AE69AB856D283BB3C193FDB /* MemoriesReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoriesReactor.swift; sourceTree = "<group>"; };
+		6AE698E78A7B0ADD0B6539D4 /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		6AE699757518A0286A64FFC9 /* AppActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppActions.swift; sourceTree = "<group>"; };
+		6AE69B56243002DF4AD63CEA /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		6AE69BCDB50AB0799C6B3A34 /* UnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
 		6AE69C863BF6A73C000ECD01 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
-		6AE69CEC3303A1C534396B37 /* AppReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReactor.swift; sourceTree = "<group>"; };
 		84456B0C204CA45900587A33 /* DesktopOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesktopOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84456B0F204CA45900587A33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84456B11204CA45900587A33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +194,22 @@
 			path = Entry;
 			sourceTree = "<group>";
 		};
+		6AE695C184C77004B8215AD1 /* Middleware */ = {
+			isa = PBXGroup;
+			children = (
+				6AE692E267071F5E5CC68B01 /* LoggingMiddleware.swift */,
+			);
+			path = Middleware;
+			sourceTree = "<group>";
+		};
+		6AE69653359A37BCAE61EEA2 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				6AE699757518A0286A64FFC9 /* AppActions.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
 		6AE6991F545E6DF88C00FA8C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,13 +227,22 @@
 			path = SupportFiles;
 			sourceTree = "<group>";
 		};
-		6AE69B5E872972B71EAE95DF /* Reactor */ = {
+		6AE69C853DA34232013CDE3B /* Reducer */ = {
 			isa = PBXGroup;
 			children = (
-				6AE69CEC3303A1C534396B37 /* AppReactor.swift */,
-				6AE69AB856D283BB3C193FDB /* MemoriesReactor.swift */,
+				6AE698E78A7B0ADD0B6539D4 /* AppReducer.swift */,
+				6AE69227066E56A852A3497F /* MemoriesReducer.swift */,
 			);
-			path = Reactor;
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		6AE69CE8F05B7182D27E1130 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				6AE69B56243002DF4AD63CEA /* AppState.swift */,
+				6AE690324C64234A835BB893 /* MemoriesState.swift */,
+			);
+			path = State;
 			sourceTree = "<group>";
 		};
 		84456B03204CA45900587A33 = {
@@ -281,7 +314,10 @@
 				84456B11204CA45900587A33 /* ViewController.swift */,
 				6AE69525633834AEC500B9E0 /* Entry */,
 				6AE69179BBD2FE5320DD29F0 /* Model */,
-				6AE69B5E872972B71EAE95DF /* Reactor */,
+				6AE69653359A37BCAE61EEA2 /* Action */,
+				6AE69CE8F05B7182D27E1130 /* State */,
+				6AE69C853DA34232013CDE3B /* Reducer */,
+				6AE695C184C77004B8215AD1 /* Middleware */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -425,11 +461,15 @@
 			files = (
 				84456B12204CA45900587A33 /* ViewController.swift in Sources */,
 				84456B10204CA45900587A33 /* AppDelegate.swift in Sources */,
-				6AE699B062953E74B6FC4B43 /* AppReactor.swift in Sources */,
 				6AE69CCD44A13F4399B272A5 /* Memory.swift in Sources */,
 				6AE699E8E0590B3115B80B39 /* Unit.swift in Sources */,
 				6AE69366FDD10D7CA0A5BB3A /* Storage.swift in Sources */,
-				6AE69FD7E4E54CE5481E732C /* MemoriesReactor.swift in Sources */,
+				6AE69E96887503767F89FC13 /* AppState.swift in Sources */,
+				6AE699A37A3093EC7CCCA33B /* AppReducer.swift in Sources */,
+				6AE69BD304A16BF1B37C3D80 /* LoggingMiddleware.swift in Sources */,
+				6AE6988D16F871BE0699AC42 /* AppActions.swift in Sources */,
+				6AE69FE6D6101FC01FC24E5A /* MemoriesState.swift in Sources */,
+				6AE6906EAC17AE8C6B04FF4A /* MemoriesReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
