@@ -30,8 +30,6 @@ class MemoriesListViewController: NSViewController, NSOutlineViewDelegate, NSOut
 
         memoriesListView.dataSource = self
         memoriesListView.delegate = self
-
-//        memoriesListView.reloadData()
     }
 
     func newState(state: MemoriesState) {
@@ -40,6 +38,16 @@ class MemoriesListViewController: NSViewController, NSOutlineViewDelegate, NSOut
         }
         items = prepareListItems(from: state.memories)
         view.reloadData()
+        expandHeaders()
+    }
+
+    func expandHeaders() {
+        guard let view = memoriesListView else {
+            return
+        }
+        for item in items {
+            view.expandItem(item)
+        }
     }
 
     func prepareListItems(from memories: [AMMemory]) -> [MemoriesListItem] {
@@ -94,5 +102,9 @@ class MemoriesListViewController: NSViewController, NSOutlineViewDelegate, NSOut
         cell.imageView?.image = item.image
 
         return cell
+    }
+
+    func outlineView(_ outlineView: NSOutlineView, shouldShowOutlineCellForItem item: Any) -> Bool {
+        return false
     }
 }
