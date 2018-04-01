@@ -272,6 +272,7 @@
 		6AE6921504527AD4D751362C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				84456B13204CA45900587A33 /* Assets.xcassets */,
 				84456B15204CA45900587A33 /* Main.storyboard */,
 			);
 			path = Resources;
@@ -331,7 +332,6 @@
 			children = (
 				6AE6921504527AD4D751362C /* Resources */,
 				84E124FA207057AE00E66799 /* Sources */,
-				84456B13204CA45900587A33 /* Assets.xcassets */,
 				84456B18204CA45900587A33 /* Info.plist */,
 				84456B19204CA45900587A33 /* DesktopOSX.entitlements */,
 			);
