@@ -261,13 +261,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6AE6913D48A3EDE39482FF01 /* Reducers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Reducers;
-			sourceTree = "<group>";
-		};
 		6AE69864BF3D2B1B10546A1D /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,26 +271,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		6AE699057FC66B3CFBDBA0D6 /* State */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = State;
-			sourceTree = "<group>";
-		};
 		6AE6991F545E6DF88C00FA8C /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				6AE69BCDB50AB0799C6B3A34 /* UnitTests.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		6AE69925C84E279617B8C65A /* Actions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Actions;
 			sourceTree = "<group>";
 		};
 		84456B03204CA45900587A33 = {
@@ -327,15 +306,13 @@
 		84456B0E204CA45900587A33 /* DesktopOSX */ = {
 			isa = PBXGroup;
 			children = (
+				84E124FA207057AE00E66799 /* Sources */,
 				84456B0F204CA45900587A33 /* AppDelegate.swift */,
 				84456B11204CA45900587A33 /* ViewController.swift */,
 				84456B13204CA45900587A33 /* Assets.xcassets */,
 				84456B15204CA45900587A33 /* Main.storyboard */,
 				84456B18204CA45900587A33 /* Info.plist */,
 				84456B19204CA45900587A33 /* DesktopOSX.entitlements */,
-				6AE69925C84E279617B8C65A /* Actions */,
-				6AE6913D48A3EDE39482FF01 /* Reducers */,
-				6AE699057FC66B3CFBDBA0D6 /* State */,
 				6AE69864BF3D2B1B10546A1D /* Model */,
 				6AE6968E295D0CBDEF0870CB /* MemoriesDataSource.swift */,
 				6AE696BBF5C54303A2D2F7C4 /* MemoriesReactor.swift */,
@@ -379,6 +356,13 @@
 				84E124AE20704F9700E66799 /* SwinjectStoryboard.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84E124FA207057AE00E66799 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
