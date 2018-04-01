@@ -280,6 +280,7 @@
 		6AE69525633834AEC500B9E0 /* Entry */ = {
 			isa = PBXGroup;
 			children = (
+				84456B0F204CA45900587A33 /* AppDelegate.swift */,
 			);
 			path = Entry;
 			sourceTree = "<group>";
@@ -337,7 +338,6 @@
 			children = (
 				6AE6921504527AD4D751362C /* Resources */,
 				84E124FA207057AE00E66799 /* Sources */,
-				84456B0F204CA45900587A33 /* AppDelegate.swift */,
 				84456B11204CA45900587A33 /* ViewController.swift */,
 				84456B13204CA45900587A33 /* Assets.xcassets */,
 				84456B15204CA45900587A33 /* Main.storyboard */,
