@@ -294,6 +294,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		6AE69B58E7B64BB3CE8EDD69 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				84456B18204CA45900587A33 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
 		6AE69B5E872972B71EAE95DF /* Reactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,8 +340,8 @@
 			children = (
 				6AE6921504527AD4D751362C /* Resources */,
 				84E124FA207057AE00E66799 /* Sources */,
-				84456B18204CA45900587A33 /* Info.plist */,
 				84456B19204CA45900587A33 /* DesktopOSX.entitlements */,
+				6AE69B58E7B64BB3CE8EDD69 /* SupportFiles */,
 			);
 			path = DesktopOSX;
 			sourceTree = "<group>";
@@ -695,7 +703,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = DesktopOSX/Info.plist;
+				INFOPLIST_FILE = DesktopOSX/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anothermemory.DesktopOSX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -715,7 +723,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = DesktopOSX/Info.plist;
+				INFOPLIST_FILE = DesktopOSX/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anothermemory.DesktopOSX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
