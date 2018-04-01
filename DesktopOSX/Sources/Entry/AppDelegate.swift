@@ -9,13 +9,13 @@
 import Cocoa
 import ReSwift
 
-let appStore = Store<AppState>(reducer: appReducer, state: AppState(), middleware: [loggingMiddleware])
+let appStore = createAppStore()
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        appStore.dispatchOnMain(AppStarted())
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
