@@ -302,6 +302,7 @@
 		6AE69B5E872972B71EAE95DF /* Reactor */ = {
 			isa = PBXGroup;
 			children = (
+				6AE69CEC3303A1C534396B37 /* AppReactor.swift */,
 			);
 			path = Reactor;
 			sourceTree = "<group>";
@@ -342,7 +343,6 @@
 				84456B18204CA45900587A33 /* Info.plist */,
 				84456B19204CA45900587A33 /* DesktopOSX.entitlements */,
 				6AE696BBF5C54303A2D2F7C4 /* MemoriesReactor.swift */,
-				6AE69CEC3303A1C534396B37 /* AppReactor.swift */,
 			);
 			path = DesktopOSX;
 			sourceTree = "<group>";
