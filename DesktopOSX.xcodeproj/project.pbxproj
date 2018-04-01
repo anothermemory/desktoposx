@@ -297,6 +297,7 @@
 		6AE69B58E7B64BB3CE8EDD69 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				84456B19204CA45900587A33 /* DesktopOSX.entitlements */,
 				84456B18204CA45900587A33 /* Info.plist */,
 			);
 			path = SupportFiles;
@@ -340,7 +341,6 @@
 			children = (
 				6AE6921504527AD4D751362C /* Resources */,
 				84E124FA207057AE00E66799 /* Sources */,
-				84456B19204CA45900587A33 /* DesktopOSX.entitlements */,
 				6AE69B58E7B64BB3CE8EDD69 /* SupportFiles */,
 			);
 			path = DesktopOSX;
@@ -695,7 +695,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = DesktopOSX/DesktopOSX.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DesktopOSX/SupportFiles/DesktopOSX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -715,7 +715,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = DesktopOSX/DesktopOSX.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DesktopOSX/SupportFiles/DesktopOSX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
