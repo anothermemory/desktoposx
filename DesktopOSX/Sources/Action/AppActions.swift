@@ -6,4 +6,4 @@
 import Foundation
 import ReSwift
 
-struct AppStarted: Action {}
+struct AppStartedAction: Action {}

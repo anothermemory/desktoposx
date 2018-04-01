@@ -36,8 +36,10 @@ func memoriesReducer(action: Action, state: MemoriesState?) -> MemoriesState {
     switch action {
     case _ as ReSwiftInit:
         break
-    case _ as AppStarted:
+    case _ as AppStartedAction:
         state.memories = fillDummyMemories()
+    case let action as SetMemoriesAction:
+        state.memories = action.memories
     default:
         break
     }
