@@ -269,12 +269,41 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		6AE6921504527AD4D751362C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6AE698294C462B9E77388236 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6AE69525633834AEC500B9E0 /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		6AE698294C462B9E77388236 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		6AE6991F545E6DF88C00FA8C /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				6AE69BCDB50AB0799C6B3A34 /* UnitTests.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6AE69B5E872972B71EAE95DF /* Reactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reactor;
 			sourceTree = "<group>";
 		};
 		84456B03204CA45900587A33 = {
@@ -304,6 +333,7 @@
 		84456B0E204CA45900587A33 /* DesktopOSX */ = {
 			isa = PBXGroup;
 			children = (
+				6AE6921504527AD4D751362C /* Resources */,
 				84E124FA207057AE00E66799 /* Sources */,
 				84456B0F204CA45900587A33 /* AppDelegate.swift */,
 				84456B11204CA45900587A33 /* ViewController.swift */,
@@ -357,7 +387,9 @@
 		84E124FA207057AE00E66799 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				6AE69525633834AEC500B9E0 /* Entry */,
 				6AE69179BBD2FE5320DD29F0 /* Model */,
+				6AE69B5E872972B71EAE95DF /* Reactor */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
