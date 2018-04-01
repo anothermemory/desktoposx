@@ -272,7 +272,7 @@
 		6AE6921504527AD4D751362C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6AE698294C462B9E77388236 /* Storyboards */,
+				84456B15204CA45900587A33 /* Main.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -283,13 +283,6 @@
 				84456B0F204CA45900587A33 /* AppDelegate.swift */,
 			);
 			path = Entry;
-			sourceTree = "<group>";
-		};
-		6AE698294C462B9E77388236 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		6AE6991F545E6DF88C00FA8C /* Model */ = {
@@ -339,7 +332,6 @@
 				6AE6921504527AD4D751362C /* Resources */,
 				84E124FA207057AE00E66799 /* Sources */,
 				84456B13204CA45900587A33 /* Assets.xcassets */,
-				84456B15204CA45900587A33 /* Main.storyboard */,
 				84456B18204CA45900587A33 /* Info.plist */,
 				84456B19204CA45900587A33 /* DesktopOSX.entitlements */,
 			);
