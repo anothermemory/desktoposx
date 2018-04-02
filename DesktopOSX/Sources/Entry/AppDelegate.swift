@@ -17,13 +17,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         appStore.dispatchOnMain(AppStartedAction())
 
-        var timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { timer in
-            var memories = [AMMemory]()
-            for _ in 0...100 {
-                memories.append(AMMemory(name: randomString(length: 10)))
-            }
-            appStore.dispatchOnMain(SetMemoriesAction(memories: memories))
-        }
+//        var timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { timer in
+//            var memories = [AMMemory]()
+//            for _ in 0...100 {
+//                memories.append(AMMemory(name: randomString(length: 10)))
+//            }
+//            appStore.dispatchOnMain(SetMemoriesAction(memories: memories))
+//        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
