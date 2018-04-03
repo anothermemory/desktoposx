@@ -24,18 +24,27 @@ class AMUnitsTableViewDataSource: NSObject, NSTableViewDataSource, NSTableViewDe
 //        tableView.register(NSNib(nibNamed: NSNib.Name("AMUnitTextPlainView"), bundle: Bundle.main), forIdentifier: id)
         
 //        let item = tableView.makeView(withIdentifier: id, owner: self)
-        let textItemView = AMUnitTextPlainView()
+        
+        if units[row].type == .textPlain {
+            let textItemView = AMUnitTextPlainView()
+            textItemView.titleField?.stringValue = units[row].title
+            textItemView.createdField?.stringValue = formatDate(units[row].created)
+            textItemView.updatedField?.stringValue = formatDate(units[row].updated)
+            
+            return textItemView
+        } else {
+            let textItemView = AMUnitTextMarkdownView()
+            textItemView.titleField?.stringValue = units[row].title
+            return textItemView
+        }
+        
 //        print(item)
 //        guard let textItemView = item as? AMUnitTextPlainView else { return nil }
 
 //        print("Guard passed")
 //        textItemView.wantsLayer = true
 //        textItemView.layer?.backgroundColor = NSColor.lightGray.cgColor
-        textItemView.titleField?.stringValue = units[row].title
-        textItemView.createdField?.stringValue = formatDate(units[row].created)
-        textItemView.updatedField?.stringValue = formatDate(units[row].updated)
-
-        return textItemView
+        
     }
     
     func formatDate(_ date: Date) -> String {

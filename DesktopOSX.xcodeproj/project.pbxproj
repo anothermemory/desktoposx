@@ -38,6 +38,8 @@
 		84A3FB302072754D0015ECD1 /* AMMemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3FB2F2072754D0015ECD1 /* AMMemoryViewController.swift */; };
 		84A3FB742072DED00015ECD1 /* AMUnitTextPlainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A3FB732072DED00015ECD1 /* AMUnitTextPlainView.xib */; };
 		84A3FB772072DF2E0015ECD1 /* NSView+XIBSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3FB762072DF2E0015ECD1 /* NSView+XIBSetup.swift */; };
+		84A3FB7A207403510015ECD1 /* AMUnitTextMarkdownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A3FB79207403510015ECD1 /* AMUnitTextMarkdownView.xib */; };
+		84A3FB7C207403600015ECD1 /* AMUnitTextMarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3FB7B207403600015ECD1 /* AMUnitTextMarkdownView.swift */; };
 		84E124BB20704FB500E66799 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AB20704F9700E66799 /* Nimble.framework */; };
 		84E124BC20704FB600E66799 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AB20704F9700E66799 /* Nimble.framework */; };
 		84E124BD20704FBE00E66799 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E124AC20704F9700E66799 /* Quick.framework */; };
@@ -149,6 +151,8 @@
 		84A3FB2F2072754D0015ECD1 /* AMMemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMMemoryViewController.swift; sourceTree = "<group>"; };
 		84A3FB732072DED00015ECD1 /* AMUnitTextPlainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMUnitTextPlainView.xib; sourceTree = "<group>"; };
 		84A3FB762072DF2E0015ECD1 /* NSView+XIBSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+XIBSetup.swift"; sourceTree = "<group>"; };
+		84A3FB79207403510015ECD1 /* AMUnitTextMarkdownView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMUnitTextMarkdownView.xib; sourceTree = "<group>"; };
+		84A3FB7B207403600015ECD1 /* AMUnitTextMarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMUnitTextMarkdownView.swift; sourceTree = "<group>"; };
 		84E124AB20704F9700E66799 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		84E124AC20704F9700E66799 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -267,6 +271,7 @@
 		6AE69AE844FBA76668281FF3 /* Units */ = {
 			isa = PBXGroup;
 			children = (
+				84A3FB78207402F30015ECD1 /* TextMarkdown */,
 				6AE69C3B3B2DD5786EA88B7F /* TextPlain */,
 				84A3FB2B207273CC0015ECD1 /* AMUnitsTableViewDataSource.swift */,
 			);
@@ -376,6 +381,15 @@
 				84A3FB762072DF2E0015ECD1 /* NSView+XIBSetup.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		84A3FB78207402F30015ECD1 /* TextMarkdown */ = {
+			isa = PBXGroup;
+			children = (
+				84A3FB79207403510015ECD1 /* AMUnitTextMarkdownView.xib */,
+				84A3FB7B207403600015ECD1 /* AMUnitTextMarkdownView.swift */,
+			);
+			path = TextMarkdown;
 			sourceTree = "<group>";
 		};
 		84AE5EC8205E90F4008BFC73 /* Frameworks */ = {
@@ -516,6 +530,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A3FB7A207403510015ECD1 /* AMUnitTextMarkdownView.xib in Resources */,
 				84456B14204CA45900587A33 /* Assets.xcassets in Resources */,
 				84A3FB742072DED00015ECD1 /* AMUnitTextPlainView.xib in Resources */,
 				84456B17204CA45900587A33 /* Main.storyboard in Resources */,
@@ -543,6 +558,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A3FB7C207403600015ECD1 /* AMUnitTextMarkdownView.swift in Sources */,
 				84A3FB302072754D0015ECD1 /* AMMemoryViewController.swift in Sources */,
 				84456B12204CA45900587A33 /* ViewController.swift in Sources */,
 				84456B10204CA45900587A33 /* AppDelegate.swift in Sources */,
