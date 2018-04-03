@@ -55,4 +55,12 @@ class AMUnitsTableViewDataSource: NSObject, NSTableViewDataSource, NSTableViewDe
         formatter.locale = Locale(identifier: "en_US")
         return formatter.string(from: date)
     }
+
+    func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
+        if units[row].type == .textPlain {
+            return CGFloat(100)
+        } else {
+            return CGFloat(50)
+        }
+    }
 }
