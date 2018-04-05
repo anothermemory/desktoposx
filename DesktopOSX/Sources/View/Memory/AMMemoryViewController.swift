@@ -30,6 +30,7 @@ class AMMemoryViewController: NSViewController {
 
         unitsTableView.dataSource = dataSource
         unitsTableView.delegate = dataSource
+        unitsTableView.selectionHighlightStyle = .none
 
         unitsTableView.reloadData()
     }
