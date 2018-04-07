@@ -1,0 +1,11 @@
+storyboards:
+  - paths:
+      - DesktopOSX/Resources/Base.lproj/Main.storyboard
+    templateName: swift4
+    output: DesktopOSX/Sources/Constants/Storyboards.swift
+
+xcassets:
+  - paths:
+      - DesktopOSX/Resources/Assets.xcassets
+    templateName: swift4
+    output: DesktopOSX/Sources/Constants/Assets.swift
