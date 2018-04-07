@@ -442,6 +442,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84456B32204CA45A00587A33 /* Build configuration list for PBXNativeTarget "DesktopOSX" */;
 			buildPhases = (
+				8452655B20797DE0002EE383 /* Swiftgen */,
 				84456B08204CA45900587A33 /* Sources */,
 				84456B09204CA45900587A33 /* Frameworks */,
 				84456B0A204CA45900587A33 /* Resources */,
@@ -568,6 +569,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8452655B20797DE0002EE383 /* Swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftgen;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/sh -e";
+			shellScript = "\"$PROJECT_DIR\"/tools/swiftgen/bin/swiftgen";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84456B08204CA45900587A33 /* Sources */ = {
