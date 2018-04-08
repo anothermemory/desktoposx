@@ -29,6 +29,7 @@
 		84456B17204CA45900587A33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84456B15204CA45900587A33 /* Main.storyboard */; };
 		84456B23204CA45A00587A33 /* DesktopOSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84456B22204CA45A00587A33 /* DesktopOSXTests.swift */; };
 		84456B2E204CA45A00587A33 /* DesktopOSXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84456B2D204CA45A00587A33 /* DesktopOSXUITests.swift */; };
+		8452655E207A8560002EE383 /* Units.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84526560207A8560002EE383 /* Units.storyboard */; };
 		84A3FB1D207130C70015ECD1 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A3FB1C207130C70015ECD1 /* ReSwift.framework */; };
 		84A3FB1E207130CB0015ECD1 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A3FB1C207130C70015ECD1 /* ReSwift.framework */; };
 		84A3FB1F207130CC0015ECD1 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A3FB1C207130C70015ECD1 /* ReSwift.framework */; };
@@ -150,6 +151,7 @@
 		84456B29204CA45A00587A33 /* DesktopOSXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesktopOSXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84456B2D204CA45A00587A33 /* DesktopOSXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopOSXUITests.swift; sourceTree = "<group>"; };
 		84456B2F204CA45A00587A33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8452655F207A8560002EE383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Units.storyboard; sourceTree = "<group>"; };
 		84A3FB1C207130C70015ECD1 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/Mac/ReSwift.framework; sourceTree = "<group>"; };
 		84A3FB29207270510015ECD1 /* AMUnitTextPlainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMUnitTextPlainView.swift; sourceTree = "<group>"; };
 		84A3FB2B207273CC0015ECD1 /* AMUnitsTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMUnitsTableViewDataSource.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			children = (
 				84456B13204CA45900587A33 /* Assets.xcassets */,
 				84456B15204CA45900587A33 /* Main.storyboard */,
+				84526560207A8560002EE383 /* Units.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -550,6 +553,7 @@
 				84A3FB7A207403510015ECD1 /* AMUnitTextMarkdownView.xib in Resources */,
 				84456B14204CA45900587A33 /* Assets.xcassets in Resources */,
 				84A3FB742072DED00015ECD1 /* AMUnitTextPlainView.xib in Resources */,
+				8452655E207A8560002EE383 /* Units.storyboard in Resources */,
 				84456B17204CA45900587A33 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -656,6 +660,14 @@
 				84456B16204CA45900587A33 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84526560207A8560002EE383 /* Units.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8452655F207A8560002EE383 /* Base */,
+			);
+			name = Units.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

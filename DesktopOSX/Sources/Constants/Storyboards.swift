@@ -58,6 +58,9 @@ internal enum StoryboardScene {
 
     internal static let initialScene = InitialSceneType<NSWindowController>(storyboard: Main.self)
   }
+  internal enum Units: StoryboardType {
+    internal static let storyboardName = "Units"
+  }
 }
 
 internal enum StoryboardSegue {

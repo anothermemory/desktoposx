@@ -1,6 +1,7 @@
 storyboards:
   - paths:
       - DesktopOSX/Resources/Base.lproj/Main.storyboard
+      - DesktopOSX/Resources/Base.lproj/Units.storyboard
     templateName: swift4
     output: DesktopOSX/Sources/Constants/Storyboards.swift
 
