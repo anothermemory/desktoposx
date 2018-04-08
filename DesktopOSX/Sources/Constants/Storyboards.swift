@@ -60,6 +60,10 @@ internal enum StoryboardScene {
   }
   internal enum Units: StoryboardType {
     internal static let storyboardName = "Units"
+
+    internal static let amUnitHeaderViewController = SceneType<DesktopOSX.AMUnitHeaderViewController>(storyboard: Units.self, identifier: "AMUnitHeaderViewController")
+
+    internal static let amUnitViewController = SceneType<DesktopOSX.AMUnitViewController>(storyboard: Units.self, identifier: "AMUnitViewController")
   }
 }
 

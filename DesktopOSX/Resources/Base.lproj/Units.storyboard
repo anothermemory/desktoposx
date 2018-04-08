@@ -1,7 +1,90 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Unit View Controller-->
+        <scene sceneID="8N8-Nh-k98">
+            <objects>
+                <viewController storyboardIdentifier="AMUnitViewController" id="tBJ-VT-rfN" customClass="AMUnitViewController" customModule="DesktopOSX" customModuleProvider="target" sceneMemberID="viewController">
+                    <stackView key="view" distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" id="ewp-3l-Djh">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="267"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <containerView translatesAutoresizingMaskIntoConstraints="NO" id="ZvQ-2d-AVS" userLabel="Unit Header View">
+                                <rect key="frame" x="0.0" y="235" width="450" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="nZQ-8V-fGN"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="tOj-hx-UEn" kind="embed" id="5X2-hw-PFm"/>
+                                </connections>
+                            </containerView>
+                            <containerView translatesAutoresizingMaskIntoConstraints="NO" id="eeZ-Wl-A86" userLabel="Unit Body View">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="227"/>
+                            </containerView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZvQ-2d-AVS" secondAttribute="trailing" id="Bka-qh-wkQ"/>
+                            <constraint firstItem="ZvQ-2d-AVS" firstAttribute="top" secondItem="ewp-3l-Djh" secondAttribute="top" id="BwB-wF-NsS"/>
+                            <constraint firstItem="ZvQ-2d-AVS" firstAttribute="leading" secondItem="ewp-3l-Djh" secondAttribute="leading" id="LE2-Yd-ZFa"/>
+                        </constraints>
+                        <visibilityPriorities>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                        </visibilityPriorities>
+                        <customSpacing>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                        </customSpacing>
+                    </stackView>
+                </viewController>
+                <customObject id="NXh-Rc-3sM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-296" y="-340"/>
+        </scene>
+        <!--Unit Header View Controller-->
+        <scene sceneID="K20-UC-aSh">
+            <objects>
+                <viewController storyboardIdentifier="AMUnitHeaderViewController" id="tOj-hx-UEn" customClass="AMUnitHeaderViewController" customModule="DesktopOSX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="j4l-jQ-QCx">
+                        <rect key="frame" x="0.0" y="0.0" width="497" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yhA-Qr-1nC" userLabel="Show/Hide Body Button">
+                                <rect key="frame" x="468" y="0.0" width="29" height="31"/>
+                                <buttonCell key="cell" type="disclosure" bezelStyle="roundedDisclosure" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0aA-xF-bTn">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="H4Y-Zn-cwW" userLabel="Unit Title">
+                                <rect key="frame" x="2" y="2" width="468" height="28"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" placeholderString="Unit Title" id="DEK-Zg-XZO">
+                                    <font key="font" metaFont="system" size="23"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="H4Y-Zn-cwW" secondAttribute="bottom" constant="2" id="BQc-hj-9NZ"/>
+                            <constraint firstItem="H4Y-Zn-cwW" firstAttribute="top" secondItem="j4l-jQ-QCx" secondAttribute="top" constant="2" id="EIe-tb-NbH"/>
+                            <constraint firstItem="yhA-Qr-1nC" firstAttribute="top" secondItem="j4l-jQ-QCx" secondAttribute="top" constant="3" id="Ot7-QF-U9O"/>
+                            <constraint firstItem="H4Y-Zn-cwW" firstAttribute="leading" secondItem="j4l-jQ-QCx" secondAttribute="leading" constant="4" id="dlZ-n0-TsQ"/>
+                            <constraint firstAttribute="trailing" secondItem="yhA-Qr-1nC" secondAttribute="trailing" constant="4" id="j3w-gq-hv0"/>
+                            <constraint firstItem="yhA-Qr-1nC" firstAttribute="leading" secondItem="H4Y-Zn-cwW" secondAttribute="trailing" constant="4" id="lHt-e5-n1P"/>
+                            <constraint firstAttribute="bottom" secondItem="yhA-Qr-1nC" secondAttribute="bottom" constant="3" id="zLR-AE-aIp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="FAj-hd-7xv" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="-458"/>
+        </scene>
+    </scenes>
 </document>
