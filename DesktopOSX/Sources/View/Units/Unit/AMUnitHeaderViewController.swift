@@ -9,7 +9,9 @@
 import Cocoa
 
 class AMUnitHeaderViewController: NSViewController {
-
+    @IBOutlet var showHideButton: NSButton!
+    @IBOutlet var unitTitleField: NSTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.

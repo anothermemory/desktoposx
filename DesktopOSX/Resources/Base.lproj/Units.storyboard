@@ -11,7 +11,7 @@
         <scene sceneID="8N8-Nh-k98">
             <objects>
                 <viewController storyboardIdentifier="AMUnitViewController" id="tBJ-VT-rfN" customClass="AMUnitViewController" customModule="DesktopOSX" customModuleProvider="target" sceneMemberID="viewController">
-                    <stackView key="view" distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" id="ewp-3l-Djh">
+                    <stackView key="view" distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" id="ewp-3l-Djh" userLabel="Unit View">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="267"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -20,9 +20,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="nZQ-8V-fGN"/>
                                 </constraints>
-                                <connections>
-                                    <segue destination="tOj-hx-UEn" kind="embed" id="5X2-hw-PFm"/>
-                                </connections>
                             </containerView>
                             <containerView translatesAutoresizingMaskIntoConstraints="NO" id="eeZ-Wl-A86" userLabel="Unit Body View">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="227"/>
@@ -42,6 +39,11 @@
                             <real value="3.4028234663852886e+38"/>
                         </customSpacing>
                     </stackView>
+                    <connections>
+                        <outlet property="unitBodyView" destination="eeZ-Wl-A86" id="yEc-7U-Aab"/>
+                        <outlet property="unitHeaderView" destination="ZvQ-2d-AVS" id="qjL-3m-GCX"/>
+                        <outlet property="unitView" destination="ewp-3l-Djh" id="Zfn-bz-XQB"/>
+                    </connections>
                 </viewController>
                 <customObject id="NXh-Rc-3sM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,6 +83,10 @@
                             <constraint firstAttribute="bottom" secondItem="yhA-Qr-1nC" secondAttribute="bottom" constant="3" id="zLR-AE-aIp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="showHideButton" destination="yhA-Qr-1nC" id="Acr-Ha-bTh"/>
+                        <outlet property="unitTitleField" destination="H4Y-Zn-cwW" id="fly-yd-XH2"/>
+                    </connections>
                 </viewController>
                 <customObject id="FAj-hd-7xv" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

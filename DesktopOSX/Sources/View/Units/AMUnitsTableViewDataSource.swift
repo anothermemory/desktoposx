@@ -26,16 +26,27 @@ class AMUnitsTableViewDataSource: NSObject, NSTableViewDataSource, NSTableViewDe
 //        let item = tableView.makeView(withIdentifier: id, owner: self)
         
         if units[row].type == .textPlain {
-            let textItemView = AMUnitTextPlainView()
-            textItemView.titleField?.stringValue = units[row].title
-            textItemView.createdField?.stringValue = formatDate(units[row].created)
-            textItemView.updatedField?.stringValue = formatDate(units[row].updated)
-            
-            return textItemView
+//            let textItemView = AMUnitTextPlainView()
+//            textItemView.titleField?.stringValue = units[row].title
+//            textItemView.createdField?.stringValue = formatDate(units[row].created)
+//            textItemView.updatedField?.stringValue = formatDate(units[row].updated)
+//
+//            return textItemView
+
+
+            let unitViewController = StoryboardScene.Units.amUnitViewController.instantiate()
+            unitViewController.unit = units[row]
+            return unitViewController.view
         } else {
-            let textItemView = AMUnitTextMarkdownView()
-            textItemView.titleField?.stringValue = units[row].title
-            return textItemView
+            let unitViewController = StoryboardScene.Units.amUnitViewController.instantiate()
+            unitViewController.unit = units[row]
+            
+            
+            
+//            let textItemView = AMUnitTextMarkdownView()
+//            textItemView.titleField?.stringValue = units[row].title
+
+            return unitViewController.view
         }
         
 //        print(item)
