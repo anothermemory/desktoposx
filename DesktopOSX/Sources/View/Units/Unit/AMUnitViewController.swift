@@ -28,6 +28,11 @@ class AMUnitViewController: NSViewController {
         addChildViewController(unitHeaderViewController)
         unitHeaderView.addSubview(unitHeaderViewController.view)
 
+        unitHeaderViewController.view.topAnchor.constraint(equalTo: unitHeaderView.topAnchor).isActive = true
+        unitHeaderViewController.view.bottomAnchor.constraint(equalTo: unitHeaderView.bottomAnchor).isActive = true
+        unitHeaderViewController.view.leftAnchor.constraint(equalTo: unitHeaderView.leftAnchor).isActive = true
+        unitHeaderViewController.view.rightAnchor.constraint(equalTo: unitHeaderView.rightAnchor).isActive = true
+
         unitHeaderViewController.unitTitleField?.stringValue = unit.title
     }
 }
